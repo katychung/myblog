@@ -12,7 +12,7 @@ tags: [Information architecture, Interaction patterns, User research]
 <!-- Hero Section -->
 <div class="full-width-section" style="background-color: #EDEFF2;">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-baseline">
+    <div class="d-flex justify-content-between align-items-baseline project-lang-row">
       <h1>{{ page.title }}</h1>
       <a href="/projects/ga-ja.html" class="lang-switch-link">日本語版</a>
     </div>

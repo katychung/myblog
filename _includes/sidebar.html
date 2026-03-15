@@ -13,11 +13,12 @@
       <img src="/assets/me.jpg" class="rounded" alt="Katy Chung">
     </div>
     <nav class="sidebar-nav">
-<a href="/projects.html" class="sidebar-link{% if page.url == "/projects.html" or page.url contains "/projects/" %} active{% endif %}">Projects</a>
+      <a href="/" class="sidebar-link{% if page.url == "/" %} active{% endif %}">Home</a>
+      <a href="/projects.html" class="sidebar-link{% if page.url == "/projects.html" or page.url contains "/projects/" %} active{% endif %}">Projects</a>
       <a href="/photos.html" class="sidebar-link{% if page.url == "/photos.html" or page.url contains "/photos/" %} active{% endif %}">Photo</a>
       <a href="/notes.html" class="sidebar-link{% if page.url == "/notes.html" or page.collection == "posts" %} active{% endif %}">Notes</a>
       <a href="/about.html" class="sidebar-link{% if page.url == "/about.html" or page.url == "/about-ja.html" %} active{% endif %}">About</a>
-      <a href="/contact.html" class="sidebar-link{% if page.url == "/contact.html" %} active{% endif %}">Contact</a>
+      <a href="/contact.html" class="sidebar-link nav-link-desktop-only{% if page.url == "/contact.html" %} active{% endif %}">Contact</a>
     </nav>
 
     <div class="sidebar-bottom">

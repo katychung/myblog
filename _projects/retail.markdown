@@ -11,7 +11,7 @@ tags: [Journey Mapping, Stakeholder Research, Strategy]
 <!-- Hero Section -->
 <div class="full-width-section" style="background-color: #EDEFF2;">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-baseline">
+    <div class="d-flex justify-content-between align-items-baseline project-lang-row">
       <h1>{{ page.title }}</h1>
       <a href="/projects/retail-ja.html" class="lang-switch-link">日本語版</a>
     </div>
@@ -45,7 +45,7 @@ tags: [Journey Mapping, Stakeholder Research, Strategy]
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">Overview</h3>
-    <p>Flow Solutions was pivoting from hardware-dependent revenue toward platform (SaaS) revenue. But client onboarding had long lead times due to manual processes and hardware dependencies—making it impossible to scale.</p>
+    <p>Flow was pivoting from hardware-dependent revenue toward platform (SaaS) revenue. But client onboarding had long lead times due to manual processes and hardware dependencies—making it impossible to scale.</p>
     <p>I mapped the end-to-end client onboarding journey through interviews with sales, operations, engineering, and leadership. The research revealed that critical information was being collected ad hoc—billing details in spreadsheets and emails, no systematic handoffs between teams, poor visibility across the process.</p>
     <p>These gaps were blocking automation and preventing self-service expansion.</p>
     <p>I created a journey map, identified priority fixes tied to business objectives (faster acquisition, self-service expansion, reduced operational friction), and presented recommendations to stakeholders.</p>
@@ -56,7 +56,7 @@ tags: [Journey Mapping, Stakeholder Research, Strategy]
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">Background & Context</h3>
-    <p>Flow Solutions is a B2B retail analytics platform for Japanese SMB retailers. Historically, most revenue came from hardware—sensor rentals, installations, data fees. But the business was shifting toward SaaS platform revenue.</p>
+    <p>Flow is a B2B retail analytics platform for Japanese SMB retailers. Historically, most revenue came from hardware—sensor rentals, installations, data fees. But the business was shifting toward SaaS platform revenue.</p>
     <p>The problem: onboarding had been built for a hardware-first world. It required physical installations, manual configurations, and extensive coordination across teams—making it impossible to scale or offer self-service.</p>
     <p>Leadership wanted to enable faster client acquisition and self-service expansion, but had no clear picture of where the process was breaking down or what to fix first.</p>
   </div>
@@ -81,7 +81,7 @@ tags: [Journey Mapping, Stakeholder Research, Strategy]
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">Approach</h3>
-    <p>Flow Solutions was pivoting from hardware revenue to SaaS platform revenue, but client onboarding was still built for a hardware-first world. Long lead times, manual processes at every stage, and no clear end-to-end owner made it impossible to scale.</p>
+    <p>Flow was pivoting from hardware revenue to SaaS platform revenue, but client onboarding was still built for a hardware-first world. Long lead times, manual processes at every stage, and no clear end-to-end owner made it impossible to scale.</p>
     <p>I interviewed sales, operations, engineering, and leadership to map the actual onboarding process—not the ideal one.</p>
     <ol>
       <li>Mapped a rough understanding of the client journey from pre-contract through go-live</li>

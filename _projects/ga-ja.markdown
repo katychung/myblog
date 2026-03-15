@@ -13,7 +13,7 @@ lang: ja
 <!-- Hero Section -->
 <div class="full-width-section" style="background-color: #EDEFF2;">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-baseline">
+    <div class="d-flex justify-content-between align-items-baseline project-lang-row">
       <h1>{{ page.title }}</h1>
       <a href="/projects/ga.html" class="lang-switch-link">English</a>
     </div>
