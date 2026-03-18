@@ -19,10 +19,12 @@
   {% if site.url != "http://localhost:4000" %}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6JN6LW9SD9"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-6JN6LW9SD9');
+    if (!localStorage.getItem('ga_opt_out')) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6JN6LW9SD9');
+    }
   </script>
   {% endif %}
 </head>
