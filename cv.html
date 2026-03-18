@@ -1,0 +1,271 @@
+---
+layout: default
+title: "CV"
+---
+
+<style>
+.cv { max-width: 640px; padding: 2rem 0 6rem; }
+
+.cv-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.cv-sub {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  opacity: 0.52;
+  margin-bottom: 0.2rem;
+}
+.cv-contact {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.72rem;
+  opacity: 0.48;
+  margin-bottom: 1.25rem;
+}
+.cv-contact a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.cv-rule {
+  border: none;
+  border-top: 1px solid currentColor;
+  opacity: 0.15;
+  margin: 0 0 0.25rem;
+}
+.cv-section {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.38;
+  margin: 2.25rem 0 0.9rem;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.cv-entry { margin-bottom: 1.5rem; break-inside: avoid; }
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.cv-company { font-weight: 500; font-size: 0.875rem; }
+.cv-date {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  opacity: 0.48;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cv-role {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  opacity: 0.55;
+  margin-bottom: 0.25rem;
+}
+.cv-context {
+  font-size: 0.78rem;
+  opacity: 0.6;
+  margin-bottom: 0.4rem;
+  font-style: italic;
+}
+.cv-non-bullets {
+  font-size: 0.78rem;
+  margin-bottom: 0.4rem;
+}
+.cv-bullets {
+  margin: 0;
+  padding-left: 1rem;
+  list-style: none;
+}
+.cv-bullets li {
+  font-size: 0.78rem;
+  line-height: 1.65;
+  margin-bottom: 0.15rem;
+  position: relative;
+}
+.cv-bullets li::before {
+  content: '–';
+  position: absolute;
+  left: -1rem;
+  opacity: 0.45;
+}
+.cv-edu-entry { margin-bottom: 0.85rem; break-inside: avoid; }
+.cv-edu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.cv-edu-name { font-weight: 500; font-size: 0.825rem; }
+.cv-edu-sub {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  opacity: 0.52;
+}
+.cv-lang-grid {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.15rem 1.5rem;
+  font-size: 0.78rem;
+}
+.cv-lang-level {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  opacity: 0.52;
+}
+
+@media print {
+  .sidebar, .site-footer, .sidebar-toggle, nav { display: none !important; }
+  .main-content { margin: 0 !important; padding: 0 !important; }
+  .container { padding: 0.65in 0.8in !important; max-width: 100% !important; }
+  .cv { max-width: 100%; padding: 0; }
+}
+</style>
+
+<div class="row pt-5 mt-4 pb-2">
+  <div class="d-flex justify-content-between align-items-baseline">
+    <div></div>
+    <a href="/cv-ja.html" class="lang-switch-link">日本語版</a>
+  </div>
+</div>
+
+<div class="cv">
+
+  <div class="cv-name">Katy Chung</div>
+  <div class="cv-sub">UX Designer · Tokyo</div>
+  <div class="cv-contact"><a href="https://katychung.com" target="_blank">katychung.com</a></div>
+  <hr class="cv-rule">
+
+  <div class="cv-section">Profile</div>
+  <p style="font-size:0.825rem;line-height:1.7;opacity:0.85;margin:0 0 0.65em;">Born and raised in the UK, I have a BSc in Interactive Media Design and 10 years experience across startups, big tech and agencies — London, Hong Kong, Melbourne and now Tokyo.</p>
+  <p style="font-size:0.825rem;line-height:1.7;opacity:0.85;margin:0 0 0.65em;">I design for complex, multi-stakeholder environments—whether that's navigating enterprise processes, working across international teams, or balancing technical constraints with user needs. I bring systems thinking and cross-cultural fluency to projects.</p>
+  <p style="font-size:0.825rem;line-height:1.7;opacity:0.85;margin:0;">I speak native English, fluent Cantonese and conversational Japanese (JLPT N2).</p>
+
+  <div class="cv-section">Experience</div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Flow</span>
+      <span class="cv-date">09/2022 – Present</span>
+    </div>
+    <div class="cv-role">UX Designer · Full Time · Yokohama</div>
+    <div class="cv-context">B2B retail analytics SaaS for Japanese SMB retailers</div>
+    <ul class="cv-bullets">
+      <li>Conducted 25+ interviews with store managers to understand pain points using data; insights informed product strategy</li>
+      <li>Mapped internal client onboarding journey across sales, operations, and engineering; identified systemic gaps in information collection blocking automation and self-service</li>
+      <li>Designed contextual insights feature delivering personalized, actionable suggestions to store staff</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Goodpatch</span>
+      <span class="cv-date">05/2022 – 08/2022</span>
+    </div>
+    <div class="cv-role">UX Designer · Contract · Remote · Tokyo</div>
+    <div class="cv-context">Mobile app for a major Japanese entertainment company</div>
+    <ul class="cv-bullets">
+      <li>Designed mobile app for new store concept launch—connecting physical stores with digital features (events, points, shopping) under tight timeline</li>
+      <li>Wireframing and prototyping across core flows (home, events, navigation, product pages) while navigating strict brand guidelines and IP approval processes</li>
+      <li>Collaborated daily with designers and PMs; drove prototyping approach to improve handoff clarity</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Oracle</span>
+      <span class="cv-date">04/2019 – 12/2019</span>
+    </div>
+    <div class="cv-role">Senior UX Designer · Full Time · Melbourne</div>
+    <div class="cv-context">Aconex construction management platform</div>
+    <ul class="cv-bullets">
+      <li>Designed automated document processing workflows using OCR to automatically label construction documents and drawings, reducing manual tagging for document controllers and field teams</li>
+      <li>Worked with distributed teams to navigate different documentation standards and requirements across regions</li>
+      <li>Participated in domain-driven design sessions with developers and business analysts to map workflows and define system requirements; prototyped and tested solutions with document controllers and field teams</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Vyond</span>
+      <span class="cv-date">08/2014 – 05/2018</span>
+    </div>
+    <div class="cv-role">Senior UX Designer · Full Time · Hong Kong</div>
+    <div class="cv-context">B2B animation platform serving Fortune 500 companies</div>
+    <ul class="cv-bullets">
+      <li>Led product redesign impacting thousands of enterprise subscribers—identified usability issues through testing, established design patterns for expert and beginner users, reduced learning curve and increased subscriptions</li>
+      <li>Established design patterns with design team (UI and UX) and engineering across flagship products—created governance process to ensure consistent implementation; patterns still in use after departure</li>
+      <li>Introduced team practices (design critiques, feedback loops) and mentored designers as team grew to 5</li>
+      <li>Shipped features bi-weekly in close collaboration with engineering; prototyped, conducted user testing, iterated rapidly</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Ribose</span>
+      <span class="cv-date">09/2012 – 08/2014</span>
+    </div>
+    <div class="cv-role">UX Designer · Hong Kong</div>
+    <div class="cv-non-bullets">Early-career UX role designing enterprise collaboration tools</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">OPX</span>
+      <span class="cv-date">10/2010 – 01/2011</span>
+    </div>
+    <div class="cv-role">Junior Designer / Developer · London</div>
+    <div class="cv-non-bullets">Junior role combining design and front-end development</div>
+  </div>
+
+  <div class="cv-section">Education & Training</div>
+
+  <div class="cv-edu-entry">
+    <div class="cv-edu-head">
+      <span class="cv-edu-name">Kudan Institute of Japanese Language</span>
+      <span class="cv-date">03/2020 – 09/2022</span>
+    </div>
+    <div class="cv-edu-sub">Japanese Language Course</div>
+  </div>
+
+  <div class="cv-edu-entry">
+    <div class="cv-edu-head">
+      <span class="cv-edu-name">Prototype Thinking Intensive</span>
+      <span class="cv-date">10/2017 – 11/2017</span>
+    </div>
+    <div class="cv-edu-sub">Online course · Tom Chi (Google)</div>
+  </div>
+
+  <div class="cv-edu-entry">
+    <div class="cv-edu-head">
+      <span class="cv-edu-name">University of Dundee</span>
+      <span class="cv-date">08/2006 – 07/2010</span>
+    </div>
+    <div class="cv-edu-sub">1st Class BSc Interactive Media Design</div>
+  </div>
+
+  <div class="cv-edu-entry">
+    <div class="cv-edu-head">
+      <span class="cv-edu-name">Glasgow Metropolitan College</span>
+      <span class="cv-date">08/2004 – 07/2006</span>
+    </div>
+    <div class="cv-edu-sub">HND Multimedia, Design & Production</div>
+  </div>
+
+  <div class="cv-section">Languages</div>
+  <div class="cv-lang-grid">
+    <span>English</span>    <span class="cv-lang-level">Native</span>
+    <span>Cantonese</span> <span class="cv-lang-level">Fluent</span>
+    <span>Hakka</span>     <span class="cv-lang-level">Fluent</span>
+    <span>Japanese</span>  <span class="cv-lang-level">Business-level · JLPT N2 (July 2021)</span>
+  </div>
+
+</div>

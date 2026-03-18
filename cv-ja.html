@@ -1,0 +1,272 @@
+---
+layout: default
+title: "CV"
+lang: ja
+---
+
+<style>
+.cv { max-width: 640px; padding: 2rem 0 6rem; }
+
+.cv-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.cv-sub {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  opacity: 0.52;
+  margin-bottom: 0.2rem;
+}
+.cv-contact {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.72rem;
+  opacity: 0.48;
+  margin-bottom: 1.25rem;
+}
+.cv-contact a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.cv-rule {
+  border: none;
+  border-top: 1px solid currentColor;
+  opacity: 0.15;
+  margin: 0 0 0.25rem;
+}
+.cv-section {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.38;
+  margin: 2.25rem 0 0.9rem;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.cv-entry { margin-bottom: 1.5rem; break-inside: avoid; }
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.cv-company { font-weight: 500; font-size: 0.875rem; }
+.cv-date {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  opacity: 0.48;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cv-role {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  opacity: 0.55;
+  margin-bottom: 0.25rem;
+}
+.cv-context {
+  font-size: 0.78rem;
+  opacity: 0.6;
+  margin-bottom: 0.4rem;
+  font-style: italic;
+}
+.cv-non-bullets {
+  font-size: 0.78rem;
+  margin-bottom: 0.4rem;
+}
+.cv-bullets {
+  margin: 0;
+  padding-left: 1rem;
+  list-style: none;
+}
+.cv-bullets li {
+  font-size: 0.78rem;
+  line-height: 1.65;
+  margin-bottom: 0.15rem;
+  position: relative;
+}
+.cv-bullets li::before {
+  content: '–';
+  position: absolute;
+  left: -1rem;
+  opacity: 0.45;
+}
+.cv-edu-entry { margin-bottom: 0.85rem; break-inside: avoid; }
+.cv-edu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.cv-edu-name { font-weight: 500; font-size: 0.825rem; }
+.cv-edu-sub {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  opacity: 0.52;
+}
+.cv-lang-grid {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.15rem 1.5rem;
+  font-size: 0.78rem;
+}
+.cv-lang-level {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  opacity: 0.52;
+}
+
+@media print {
+  .sidebar, .site-footer, .sidebar-toggle, nav { display: none !important; }
+  .main-content { margin: 0 !important; padding: 0 !important; }
+  .container { padding: 0.65in 0.8in !important; max-width: 100% !important; }
+  .cv { max-width: 100%; padding: 0; }
+}
+</style>
+
+<div class="row pt-5 mt-4 pb-2">
+  <div class="d-flex justify-content-between align-items-baseline">
+    <div></div>
+    <a href="/cv.html" class="lang-switch-link">English</a>
+  </div>
+</div>
+
+<div class="cv">
+
+  <div class="cv-name">Katy Chung</div>
+  <div class="cv-sub">UXデザイナー · 東京</div>
+  <div class="cv-contact"><a href="https://katychung.com" target="_blank">katychung.com</a></div>
+  <hr class="cv-rule">
+
+  <div class="cv-section">プロフィール</div>
+  <p style="font-size:0.825rem;line-height:1.7;opacity:0.85;margin:0 0 0.65em;">イギリス出身。インタラクティブメディアデザインを専攻し、スタートアップ、大手テクノロジー企業、エージェンシーにて10年の経験を積んできました。ロンドン、香港、メルボルン、そして現在は東京を拠点に活動しています。</p>
+  <p style="font-size:0.825rem;line-height:1.7;opacity:0.85;margin:0 0 0.65em;">複数のステークホルダーが関わる複雑な環境でのデザインを得意としています。エンタープライズプロセスのナビゲート、国際的なチームとの協働、技術的制約とユーザーニーズのバランス調整など、システム思考とクロスカルチャーな対応力を活かしてプロジェクトに取り組んでいます。</p>
+  <p style="font-size:0.825rem;line-height:1.7;opacity:0.85;margin:0;">英語（ネイティブ）、広東語（堪能）、日本語（日常会話、JLPT N2）。</p>
+
+  <div class="cv-section">職務経歴</div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Flow</span>
+      <span class="cv-date">2022年9月 – 現在</span>
+    </div>
+    <div class="cv-role">UXデザイナー · 正社員 · 横浜</div>
+    <div class="cv-context">日本の中小小売業者向けB2B小売分析SaaS</div>
+    <ul class="cv-bullets">
+      <li>店舗マネージャー25名以上にインタビューを実施し、データ活用における課題を把握。得られたインサイトを製品戦略に反映した</li>
+      <li>セールス、オペレーション、エンジニアリングにまたがる社内クライアントオンボーディングのジャーニーをマッピング。自動化とセルフサービス化を阻む情報収集の構造的なギャップを特定した</li>
+      <li>店舗スタッフにパーソナライズされた実用的な提案を提供する、コンテキスト型インサイト機能を設計した</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Goodpatch</span>
+      <span class="cv-date">2022年5月 – 2022年8月</span>
+    </div>
+    <div class="cv-role">UXデザイナー · 業務委託 · リモート · 東京</div>
+    <div class="cv-context">大手日本エンターテインメント企業向けモバイルアプリ</div>
+    <ul class="cv-bullets">
+      <li>新店舗コンセプトのローンチに向けたモバイルアプリを設計。物理店舗とデジタル機能（イベント、ポイント、ショッピング）を連携させ、タイトなスケジュールの中で実装した</li>
+      <li>ホーム、イベント、ナビゲーション、商品ページなどのコアフローをワイヤーフレームとプロトタイプで設計しながら、厳格なブランドガイドラインとIP承認プロセスに対応した</li>
+      <li>デザイナーやPMと日常的に連携し、ハンドオフの明確化に向けたプロトタイピングのアプローチを主導した</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Oracle</span>
+      <span class="cv-date">2019年4月 – 2019年12月</span>
+    </div>
+    <div class="cv-role">シニアUXデザイナー · 正社員 · メルボルン</div>
+    <div class="cv-context">Aconex 建設管理プラットフォーム</div>
+    <ul class="cv-bullets">
+      <li>OCRを活用した文書自動処理ワークフローを設計。建設図書・図面の自動ラベリングにより、文書管理担当者と現場チームの手作業によるタグ付けを削減した</li>
+      <li>分散チームと連携し、地域ごとに異なる文書標準や要件への対応を図った</li>
+      <li>開発者・ビジネスアナリストとのドメイン駆動型設計セッションに参加し、ワークフローのマッピングとシステム要件の定義を実施。文書管理担当者と現場チームを対象にソリューションのプロトタイプ・テストを行った</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Vyond</span>
+      <span class="cv-date">2014年8月 – 2018年5月</span>
+    </div>
+    <div class="cv-role">シニアUXデザイナー · 正社員 · 香港</div>
+    <div class="cv-context">Fortune 500企業を顧客に持つB2Bアニメーションプラットフォーム</div>
+    <ul class="cv-bullets">
+      <li>数千人のエンタープライズユーザーに影響を与える製品リデザインを主導。テストを通じてユーザビリティ課題を特定し、上級者・初心者双方に対応したデザインパターンを確立。習得コストを下げ、サブスクリプション数を増加させた</li>
+      <li>デザインチーム（UIおよびUX）とエンジニアリング全体にわたるフラッグシップ製品のデザインパターンを確立。一貫した実装を確保するガバナンスプロセスを構築し、在籍終了後もパターンは継続利用されている</li>
+      <li>チームプラクティス（デザインクリティーク、フィードバックループ）を導入し、チームが5名に成長する中でデザイナーをメンタリングした</li>
+      <li>エンジニアリングと密に連携しながら隔週でフィーチャーをリリース。プロトタイプ制作、ユーザーテスト、迅速な反復を継続した</li>
+    </ul>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">Ribose</span>
+      <span class="cv-date">2012年9月 – 2014年8月</span>
+    </div>
+    <div class="cv-role">UXデザイナー · 香港</div>
+    <div class="cv-non-bullets">エンタープライズ向けコラボレーションツールのデザインを担当したキャリア初期のUXロール</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head">
+      <span class="cv-company">OPX</span>
+      <span class="cv-date">2010年10月 – 2011年1月</span>
+    </div>
+    <div class="cv-role">ジュニアデザイナー / デベロッパー · ロンドン</div>
+    <div class="cv-non-bullets">デザインとフロントエンド開発を組み合わせたジュニアロール</div>
+  </div>
+
+  <div class="cv-section">学歴・研修</div>
+
+  <div class="cv-edu-entry">
+    <div class="cv-edu-head">
+      <span class="cv-edu-name">九段日本語学院</span>
+      <span class="cv-date">2020年3月 – 2022年9月</span>
+    </div>
+    <div class="cv-edu-sub">日本語コース</div>
+  </div>
+
+  <div class="cv-edu-entry">
+    <div class="cv-edu-head">
+      <span class="cv-edu-name">Prototype Thinking Intensive</span>
+      <span class="cv-date">2017年10月 – 2017年11月</span>
+    </div>
+    <div class="cv-edu-sub">オンラインコース · Tom Chi (Google)</div>
+  </div>
+
+  <div class="cv-edu-entry">
+    <div class="cv-edu-head">
+      <span class="cv-edu-name">University of Dundee</span>
+      <span class="cv-date">2006年8月 – 2010年7月</span>
+    </div>
+    <div class="cv-edu-sub">インタラクティブメディアデザイン 学士（首席）</div>
+  </div>
+
+  <div class="cv-edu-entry">
+    <div class="cv-edu-head">
+      <span class="cv-edu-name">Glasgow Metropolitan College</span>
+      <span class="cv-date">2004年8月 – 2006年7月</span>
+    </div>
+    <div class="cv-edu-sub">HND マルチメディア・デザイン・制作</div>
+  </div>
+
+  <div class="cv-section">語学</div>
+  <div class="cv-lang-grid">
+    <span>英語</span>       <span class="cv-lang-level">ネイティブ</span>
+    <span>広東語</span>    <span class="cv-lang-level">堪能</span>
+    <span>客家語</span>    <span class="cv-lang-level">堪能</span>
+    <span>日本語</span>    <span class="cv-lang-level">ビジネスレベル · JLPT N2（2021年7月）</span>
+  </div>
+
+</div>
