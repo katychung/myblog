@@ -1,8 +1,7 @@
 ---
 layout: project
 title: "誰も全体を把握していなかった"
-date: 2001-05-01 00:00:00
-project-date: "2023"
+project-date: "2025"
 description: "ステークホルダーインタビューとジャーニーマッピングで、自動化とセルフサービス成長を阻む構造的なギャップを明らかにした。"
 teaser-image: assets/img/flow/dashboard.png
 tags: [ジャーニーマッピング, ステークホルダーリサーチ, 戦略]

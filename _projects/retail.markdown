@@ -1,8 +1,7 @@
 ---
 layout: project
 title: "No One Owned the Whole Thing"
-date: 2001-05-01 00:00:00
-project-date: "2023"
+project-date: "2025"
 description: "Surfacing the systemic gaps blocking automation and self-service growth through stakeholder interviews and journey mapping."
 teaser-image: assets/img/flow/dashboard.png
 tags: [Journey Mapping, Stakeholder Research, Strategy]
