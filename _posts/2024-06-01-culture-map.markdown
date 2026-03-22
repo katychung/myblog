@@ -2,7 +2,7 @@
 layout: post
 title:  "Book Notes: Culture Map"
 date:   2023-08-10 12:00:00 +0900
-image: /assets/books/culture-map.jpg
+image: /assets/img/books/culture-map.jpg
 tags: book
 
 ---

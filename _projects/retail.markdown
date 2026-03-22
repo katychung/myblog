@@ -1,10 +1,10 @@
 ---
 layout: project
-title: "Mapping Client Onboarding to Enable Scale"
+title: "No One Owned the Whole Thing"
 date: 2001-05-01 00:00:00
 project-date: "2023"
 description: "Surfacing the systemic gaps blocking automation and self-service growth through stakeholder interviews and journey mapping."
-teaser-image: assets/img/retail-dashboard.png
+teaser-image: assets/img/flow/dashboard.png
 tags: [Journey Mapping, Stakeholder Research, Strategy]
 ---
 
@@ -15,9 +15,9 @@ tags: [Journey Mapping, Stakeholder Research, Strategy]
       <h1>{{ page.title }}</h1>
       <a href="/projects/retail-ja.html" class="lang-switch-link">日本語版</a>
     </div>
-    <p>{{ page.description }}</p>
+    <p class="lead" style="max-width: 640px;">{{ page.description }}</p>
     <div class="py-4">
-      <img src="/assets/img/retail-dashboard.png" class="img-fluid rounded" alt="Client onboarding journey map">
+      <img src="/assets/img/flow/dashboard.png" class="img-fluid rounded" alt="Flow analytics dashboard">
     </div>
     <hr class="project-meta-rule">
     <div class="project-meta-grid">
@@ -27,7 +27,7 @@ tags: [Journey Mapping, Stakeholder Research, Strategy]
       </div>
       <div>
         <div class="meta-label">Team</div>
-        <p class="meta-value">Sales, Operations, Engineering, Leadership</p>
+        <p class="meta-value">Sales, Operations, Engineering, Management</p>
       </div>
       <div>
         <div class="meta-label">Timeline</div>
@@ -41,117 +41,84 @@ tags: [Journey Mapping, Stakeholder Research, Strategy]
   </div>
 </div>
 
-<!-- Overview Section -->
+<!-- Context -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">Overview</h3>
-    <p>Flow was pivoting from hardware-dependent revenue toward platform (SaaS) revenue. But client onboarding had long lead times due to manual processes and hardware dependencies—making it impossible to scale.</p>
-    <p>I mapped the end-to-end client onboarding journey through interviews with sales, operations, engineering, and leadership. The research revealed that critical information was being collected ad hoc—billing details in spreadsheets and emails, no systematic handoffs between teams, poor visibility across the process.</p>
-    <p>These gaps were blocking automation and preventing self-service expansion.</p>
-    <p>I created a journey map, identified priority fixes tied to business objectives (faster acquisition, self-service expansion, reduced operational friction), and presented recommendations to stakeholders.</p>
+    <h3 class="page-label mb-3">Context</h3>
+    <p>Flow is a B2B retail analytics platform for Japanese SMB retailers — helping store managers understand store performance: store traffic, sales, conversion, and cross-store comparison. The business was shifting from hardware-dependent revenue toward SaaS platform revenue, which meant onboarding needed to scale.</p>
+    <p>The problem: onboarding had been built for a hardware-first world. It required physical installations, manual configurations, and coordination across sales, operations, and engineering — with each team only knowing their own slice of the process. The business wanted to move faster. But no one had ever looked at the whole thing.</p>
   </div>
 </div>
 
-<!-- Background Section -->
+<!-- Problem -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">Background & Context</h3>
-    <p>Flow is a B2B retail analytics platform for Japanese SMB retailers. Historically, most revenue came from hardware—sensor rentals, installations, data fees. But the business was shifting toward SaaS platform revenue.</p>
-    <p>The problem: onboarding had been built for a hardware-first world. It required physical installations, manual configurations, and extensive coordination across teams—making it impossible to scale or offer self-service.</p>
-    <p>Leadership wanted to enable faster client acquisition and self-service expansion, but had no clear picture of where the process was breaking down or what to fix first.</p>
+    <h3 class="page-label mb-3">The Problem</h3>
+    <p>Because each team only saw their part, no one could answer a simple question: <em>where is onboarding actually breaking down?</em></p>
+    <p>The symptoms were clear — long lead times before clients could go live, high-touch manual work at every stage, delays cascading from one team to the next. But without a shared view of the journey, fixing it meant guessing.</p>
+    <p>Critical information was being collected ad hoc throughout: billing details in spreadsheets and emails, client requirements gathered informally, handoffs between teams undocumented. It wasn't any single team's fault — it was a systemic gap nobody had been asked to own.</p>
   </div>
 </div>
 
-<!-- Problem Section -->
+<!-- Approach -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
-  <div class="container">
-    <h3 class="page-label mb-3">Problem</h3>
-    <p>Client onboarding involved sales, operations, and engineering—but each team only knew their slice of the process. The result was slow, fragmented, and hard to fix:</p>
-    <ul>
-      <li>Long lead times before clients could go live</li>
-      <li>High-touch manual work at every stage, with no clear owner end-to-end</li>
-      <li>Delays compounded as each team waited on the previous one</li>
-      <li>No one could see the full journey—so no one knew where to intervene</li>
-    </ul>
-    <p>The business goal was clear: enable self-service onboarding to unlock platform revenue and scale faster. But first, we needed to understand what was actually happening—and why it was taking so long.</p>
-  </div>
-</div>
-
-<!-- Approach Section -->
-<div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">Approach</h3>
-    <p>Flow was pivoting from hardware revenue to SaaS platform revenue, but client onboarding was still built for a hardware-first world. Long lead times, manual processes at every stage, and no clear end-to-end owner made it impossible to scale.</p>
-    <p>I interviewed sales, operations, engineering, and leadership to map the actual onboarding process—not the ideal one.</p>
-    <ol>
-      <li>Mapped a rough understanding of the client journey from pre-contract through go-live</li>
-      <li>Verified with each stakeholder individually: <em>is this accurate?</em></li>
-      <li>Identified gaps, pain points, and dependencies</li>
-      <li>Analysed where information was being collected (or not)</li>
-      <li>Prioritised fixes based on business impact and feasibility</li>
-    </ol>
+    <p>I owned this end-to-end. I interviewed all four stakeholders individually — sales, operations, engineering, and management — not to gather opinions, but to map what was actually happening. From those conversations I built an initial journey map, then brought the group together in a single session to verify, challenge, and extend it collectively.</p>
+    <p>That session is where alignment happened. With everyone in the room seeing the same picture for the first time, gaps and dependencies that had never been made explicit became visible. I took the consolidated findings away, finalised the map, and reshared with the team.</p>
+    <p>The priority order largely determined itself — the dependencies between problems meant there wasn't much room to resequence. Data foundations had to come first, because without trustworthy data, self-service features would be built on shaky ground.</p>
     <div class="py-4">
-      <img src="/assets/img/retail-journeymap.png" class="img-fluid rounded" alt="Client onboarding journey map">
-      <p class="figure-caption text-center mt-2">End-to-end journey showing touchpoints, handoffs, and gaps across teams</p>
+      <img src="/assets/img/flow/journeymap.png" class="img-fluid rounded" alt="Client onboarding journey map">
+      <p class="figure-caption text-center mt-2">End-to-end journey showing touchpoints, ownership, and gaps across all three teams</p>
     </div>
   </div>
 </div>
 
-<!-- Key Findings Section -->
-<div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
-  <div class="container">
-    <h3 class="page-label mb-3">Key Findings</h3>
-    <p>Critical information was being collected ad hoc, creating cascading problems:</p>
-    <ul>
-      <li><strong>Billing information:</strong> Sometimes collected by sales, sometimes operations, sometimes not until the client complained. Stored in spreadsheets and emails, causing payment delays.</li>
-      <li><strong>Client requirements:</strong> Gathered informally throughout the process, making it impossible to automate setup or offer self-service.</li>
-      <li><strong>Handoffs:</strong> No clear documentation when work moved from sales → operations → engineering. Teams didn't know what information the next team needed.</li>
-    </ul>
-    <p>It wasn't any single team's fault—it was a systemic lack of structured information collection at the right moments.</p>
-  </div>
-</div>
-
-<!-- Deliverables Section -->
+<!-- Findings -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">What I Delivered</h3>
-    <ol>
-      <li>
-        <strong>Journey map</strong> — a visual representation of the full client onboarding process, showing touchpoints, stakeholder ownership, and gaps
-      </li>
-      <li>
-        <strong>Stakeholder presentation</strong> — findings presented to the cross-functional team and leadership
-      </li>
-      <li>
-        <strong>Prioritised recommendations</strong> — specific fixes ranked by business impact and feasibility, tied to objectives: faster client acquisition, self-service expansion, eliminating billing delays, and reducing manual operational work
-      </li>
-    </ol>
+    <h3 class="page-label mb-3">What We Found</h3>
+    <p>Three recurring themes emerged across every team's account of the process:</p>
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">Data foundations</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Basic data quality issues were eroding client trust before onboarding was even complete. Missing fields (postal code), inconsistent address structures, and unmanaged accuracy expectations meant clients questioned the platform before they'd had a chance to use it.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">Operational bottlenecks</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Demo and production tenant creation, store additions, user imports — all done manually by the operations team. Every new client was a bespoke project. There was no path to self-service, and no capacity to scale without hiring.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">Process gaps</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Billing was collected late — sometimes not until clients complained. POS integration types and formats were not tracked systematically, making it impossible to automate compatibility checks. Domain whitelisting and brand setup were ad hoc.</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Outcome Section -->
+<!-- Priorities -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">Outcome</h3>
-    <p>For the first time, leadership and all three teams had a shared view of the full onboarding journey—where it broke down, why, and what to fix.</p>
-    <h4 class="page-label mt-4 mb-3">Organisational impact</h4>
-    <p>The journey map created shared language across teams, made invisible handoffs and blockers visible to leadership, and enabled data-driven prioritisation of what to fix first.</p>
-    <h4 class="page-label mt-4 mb-3">Prioritised recommendations</h4>
-    <ul>
-      <li>Automate client account creation (eliminate 2-week delay)</li>
-      <li>Self-service onboarding portal for tier 1 clients</li>
-      <li>Clear ownership model for each onboarding phase</li>
-    </ul>
-    <h4 class="page-label mt-4 mb-3">Current status</h4>
-  </div>
-</div>
-
-<!-- Reflections Section -->
-<div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
-  <div class="container">
-    <h3 class="page-label mb-3">Reflections</h3>
-    <p>This project reinforced that in B2B environments, the design challenge is often not the interface—it's understanding the operational system and identifying where things break down.</p>
-    <p>The value wasn't just the map itself—it was creating shared understanding and a clear path forward for what to fix first.</p>
-    <p>Navigating the organisational dynamics was the hardest part. Surfacing communication gaps and process breakdowns without assigning blame required careful framing throughout.</p>
+    <h3 class="page-label mb-3">Priorities</h3>
+    <p>Using a structured opportunities framework — mapping business outcomes, product outcomes, objectives, and key results against candidate solutions — the team aligned on a priority order across three tiers.</p>
+    <div class="py-4">
+      <img src="/assets/img/flow/opportunities-map.png" class="img-fluid rounded" alt="Opportunities map showing prioritised recommendations">
+      <p class="figure-caption text-center mt-2">Opportunities mapped against business and product outcomes to determine what to tackle first</p>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">1. Fix data foundations</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Without trustworthy data, nothing else mattered. First priority was resolving the issues that were actively breaking client confidence: adding missing fields, fixing address structure, and creating a clear process for communicating accuracy expectations.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">2. Enable self-service</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">The biggest constraint on growth was operations bandwidth. Second priority was removing manual steps from the critical path: self-service store addition, bulk user and store import, and simplified demo/production account creation.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">3. Strategic improvements</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Longer-horizon fixes that would unlock the next stage of scale: moving billing earlier in the process, tracking POS integrations systematically, and enabling brand and domain whitelisting for enterprise clients.</p>
+      </div>
+    </div>
+    <p class="mt-2">For the first time, all four stakeholders shared a single view of the onboarding journey. The map gave the organisation a common language for a process that had previously existed only in separate people's heads — and the dependency structure made the priority order clear once everyone could see the whole picture.</p>
   </div>
 </div>

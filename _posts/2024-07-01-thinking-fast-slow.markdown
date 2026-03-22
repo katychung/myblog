@@ -2,7 +2,7 @@
 layout: post
 title:  "Book Notes: Thinking Fast & Slow"
 date:   2024-07-11 12:00:00 +0900
-image: /assets/books/thinking-fast-slow.jpg
+image: /assets/img/books/thinking-fast-slow.jpg
 tags: book
 ---
 

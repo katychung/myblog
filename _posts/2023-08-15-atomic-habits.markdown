@@ -2,7 +2,7 @@
 layout: post
 title:  "Book Notes: Atomic Habits"
 date:   2023-08-15 12:00:00 +0900
-image: /assets/books/atomic-habits.jpg
+image: /assets/img/books/atomic-habits.jpg
 tags: book
 
 ---

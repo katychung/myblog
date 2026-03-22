@@ -1,0 +1,23 @@
+---
+layout: post
+title: "On Building Something for Yourself"
+date: 2026-03-19 12:00:00 +0900
+tags: process
+excerpt: "I've tried to build things before. It never quite stuck — until now."
+---
+
+I've coded here and there in the past. The interest was always there, but somewhere between the setup, the frameworks, and the unfamiliar syntax, momentum would stall. It was too slow, and too far from the actual making of the thing.
+
+<img src="/assets/img/kotodama/app.png" class="img-fluid rounded my-4 img-lg" alt="Kotodama app">
+
+Claude Code changed that. For the first time, I could describe what I wanted and watch it take shape — not as a mockup, but as something real, on a device, that actually worked. The gap between idea and execution collapsed in a way I hadn't experienced before.
+
+I used it to build Kotodama — a Japanese learning app. Meetings, presentations, phone calls, the doctor. I've been in Japan since 2020, and those moments trip me up more often than I would like to admin. So I just wanted to build something to help me level up.
+
+But the app almost isn't the point. What stuck with me was the experience of building itself — having an idea in the morning and holding something working by the afternoon. Native iOS, real interactions, exactly the way I'd have designed it. No half-way happy compromises on the design.
+
+That's the part that feels new. As a designer with some technical knowledge, I'd always been close to the build — but never fully in it. Now that gap has closed.
+
+Now I'm thinking, what else is possible? Tools I've always wanted but that don't exist. Utilities built exactly for how I work.
+
+

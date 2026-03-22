@@ -1,12 +1,12 @@
 ---
 layout: project
-title: "アニメーション動画作成プラットフォーム"
-date: 1999-05-01 00:00:00
-project-date: "2014 - 2018"
-description: "新規ユーザーとパワーユーザーの双方に対応するインタラクションパターンの再設計——すぐに使いこなせるデザインと、製品・チームのスケールに合わせた一貫した機能開発の実現。"
-teaser-image: /assets/img/ga-teaser.png
-screens: /assets/img/ga-screens.png
-tags: [情報アーキテクチャ, インタラクションパターン, ユーザーリサーチ]
+title: "矛盾はなかった。全部が矛盾していた。"
+date: 1999-05-02 00:00:00
+project-date: "2014 – 2018"
+description: "Vyondのアニメーションツールは急速に成長した。成長しすぎた。ベータテストで露わになったのは、機能ごとには動くが、実際の使用では破綻する製品だった。ひとつのインタラクションパターンがそれを変えた。"
+teaser-image: /assets/img/ga/teaser.png
+screens: /assets/img/ga/screens.png
+tags: [情報アーキテクチャ, インタラクションデザイン, ユーザーリサーチ]
 lang: ja
 ---
 
@@ -17,10 +17,17 @@ lang: ja
       <h1>{{ page.title }}</h1>
       <a href="/projects/ga.html" class="lang-switch-link">English</a>
     </div>
-    <p>{{ page.description }}</p>
+    <p class="lead" style="max-width: 640px;">{{ page.description }}</p>
     <div class="py-4">
-      <img src="/assets/img/ga-screens.png" class="img-fluid rounded" alt="Vyond Studioでのアセット編集">
-      <figcaption class="figure-caption text-center mt-2">Vyond Studioでのアセット編集</figcaption>
+      <div style="background-color: #9BDEA8; border-radius: 8px; padding: 2rem;">
+        <!-- Device frame -->
+        <div style="background: #1c1c1e; border-radius: 10px; padding: 14px 14px 28px 14px; position: relative; box-shadow: 0 2px 12px rgba(0,0,0,0.3);">
+          <div style="width: 6px; height: 6px; background: #3a3a3a; border-radius: 50%; margin: 0 auto 10px;"></div>
+          <video class="img-fluid" autoplay muted loop playsinline style="border-radius: 4px; display: block;">
+            <source src="/assets/img/ga/color-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
     <hr class="project-meta-rule">
     <div class="project-meta-grid">
@@ -32,41 +39,72 @@ lang: ja
         <div class="meta-label">チーム</div>
         <p class="meta-value">デザイン、エンジニアリング、プロダクト</p>
       </div>
-      <div>
-        <div class="meta-label">期間</div>
-        <p class="meta-value">2014 – 2018</p>
-      </div>
-      <div>
-        <div class="meta-label">スキル</div>
-        <p class="meta-value meta-skills">情報アーキテクチャ · インタラクションパターン · ユーザーリサーチ</p>
-      </div>
     </div>
   </div>
 </div>
 
-<!-- Overview Section -->
+<!-- Context -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">概要</h3>
-    <p>Vyondは新しい技術スタックへの移行と、製品・チームの急速な拡大が重なる時期を迎えていました。ベータリリース直前のユーザーテストで重大な問題が明らかになりました——新規ユーザーは基本タスクを完了できず、既存のパワーユーザーは使い慣れた機能を見つけられない状態でした。</p>
-    <p>根本原因は個々の機能ではなく、情報アーキテクチャにありました。複数のデザイナーが全体的な視点なく各機能を担当した結果、製品は断片化し、一貫性を欠いていました。</p>
-    <p>デザインチーム（UIおよびUX）とエンジニアリングと協力し、3つのユーザータイプ（初めて動画を作る初心者、作業効率を求めるパワーユーザー、ブランドアセットを管理する意思決定者）に対応できるインタラクションパターンを確立しました。</p>
-    <p>これらのパターンにより新規ユーザーがすぐに使いこなせるようになり、パワーユーザーの効率を向上させ、私が退職した後も数年にわたって使い続けられています。</p>
+    <h3 class="page-label mb-3">背景</h3>
+    <p>Vyondに入社したのは2014年。デザイナー3名、社員約30名、香港・台湾・サンフランシスコをまたぐチームだった。4年間で毎年ほぼ倍増する組織の成長とともに、スケールに耐えるデザインプロセスとパターンの構築を担った。</p>
+    <p>アプリは移行ではなく、ゼロから作り直されていた。スピードを優先したため、デザインチームは機能ごとの小チームに分かれた。それぞれが合理的な判断をしていた。ただし、横断的な視点を持つ人がいなかった。プライベートベータを新規ユーザーとパワーユーザーで実施したとき、それは明らかになった。</p>
+    <p>製品はブラウザベースのアニメーション動画ツールで、非デザイナーがプロ品質の動画を作れる。多くのFortune 500企業に使われていた。その規模感はこんな感じだ：</p>
+    <div class="mt-4" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem;">
+      <div class="row mb-2">
+        <div class="col-6 col-md-3 mb-3">
+          <p class="card-tags mb-1">シーン</p>
+          <p style="font-size: var(--text-sm); opacity: 0.7; line-height: 1.6;">背景・カメラ・長さ・トランジション</p>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <p class="card-tags mb-1">キャラクター</p>
+          <p style="font-size: var(--text-sm); opacity: 0.7; line-height: 1.6;">アクション・表情・口パク・音声</p>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <p class="card-tags mb-1">エフェクト</p>
+          <p style="font-size: var(--text-sm); opacity: 0.7; line-height: 1.6;">グループ・モーション・マスキング・フィルター</p>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <p class="card-tags mb-1">アセット＆出力</p>
+          <p style="font-size: var(--text-sm); opacity: 0.7; line-height: 1.6;">小道具・テキスト・音楽・テンプレート・テーマ</p>
+        </div>
+      </div>
+      <details style="border-top: 1px solid #e0e0e0; padding-top: 1rem;">
+        <summary style="cursor: pointer; font-size: var(--text-sm); color: var(--text-muted, #666); user-select: none;">全体マップを見る →</summary>
+        <img src="/assets/img/ga/structure.png" class="rounded mt-3" style="max-width: 60%; display: block; margin: 0 auto;" alt="Vyond動画の全体構造">
+        <p class="figure-caption text-center mt-2">ひとつひとつが機能、そして機能ごとに独自のインタラクションパターンがあった</p>
+      </details>
+    </div>
   </div>
 </div>
 
-<!-- Background Section -->
+<!-- People -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">背景</h3>
-    <p>私がVyondの香港オフィスに入社した2014年、同社はプロダクトマーケットフィット（PMF）に近づいていました。チームは精鋭——約30名の社員の中にデザイナーは3名——で、香港、台湾、サンフランシスコのメンバーと高い連携で働いていました。</p>
-    <p>年間で社員数が倍増する中、スケールに耐えるデザイン基盤の構築に貢献しました：</p>
-    <ul>
-      <li><strong>デザインプロセス：</strong>製品・デザイン・エンジニアリング間の連携を改善する構造化されたワークフロー</li>
-      <li><strong>ユーザーテスト文化：</strong>定期的なテストにより摩擦点を発見し、チーム全体でユーザー中心の文化を醸成</li>
-      <li><strong>オンボーディング改善：</strong>ユーザージャーニーのマッピングによりチャーンを削減し、定着率を向上</li>
-      <li><strong>インタラクションパターン：</strong>一貫性と開発速度向上のための再利用可能なパターンの文書化</li>
-    </ul>
+    <h3 class="page-label mb-3">ユーザー</h3>
+    <p>再設計したアプリのベータリリースが近づくにつれ、テストでふたつの異なる失敗パターンが浮かび上がってきた。新規ユーザーと、経験豊富なユーザー、それぞれに。</p>
+    <div class="row mt-4 mb-2">
+      <div class="col-sm-6 mb-4">
+        <div class="persona-card persona-card--newbie">
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <img src="/assets/img/ga/persona-newbie.png" class="persona-avatar" alt="新規ユーザー">
+            <div class="speech-bubble flex-grow-1">「少し混乱してしまいました…またいつか試してみます」</div>
+          </div>
+          <p class="persona-type">新規ユーザー</p>
+          <p class="persona-body">トライアルで登録したばかり。とにかく一本だけ動画を作りたい。選択肢が多すぎて、どこから始めればいいかわからない。やる気があっても、始める前に挫折しやすい。</p>
+        </div>
+      </div>
+      <div class="col-sm-6 mb-4">
+        <div class="persona-card persona-card--poweruser">
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <img src="/assets/img/ga/persona-champion.png" class="persona-avatar" alt="パワーユーザー">
+            <div class="speech-bubble flex-grow-1">「レガシーとはかなり違う画面ですね…キャラクターに話させようとしてるんですが、どこをクリックすればいいのかわからなくて」</div>
+          </div>
+          <p class="persona-type">パワーユーザー</p>
+          <p class="persona-body">チーム全体の動画を大量に制作している。やりたいことは明確で、ツールには邪魔してほしくない。パネルごとにパターンが違うせいで、毎回操作を覚え直す羽目になる。</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -74,81 +112,66 @@ lang: ja
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">課題</h3>
-    <p>ベータテストで重大なユーザビリティの問題が明らかになりました：</p>
-    <ul>
-      <li>新規ユーザーは基本的なタスク（初めての動画作成）を完了できなかった</li>
-      <li>パワーユーザーは機能を見つけられても、アプリ全体でパターンが統一されておらず、操作を覚え直す必要があり認知負荷が高く、作業効率が低くなっていた</li>
-      <li>製品全体が断片化して感じられた</li>
-    </ul>
-    <p>根本原因は、デザイナーたちが統一した情報アーキテクチャなく、それぞれ並行して機能を開発していたことでした。各機能は独立して機能していましたが、全体として見ると一貫性のない体験になっていました。</p>
-    <p>テスト結果を確認したリーダーシップは、リリース前にこの問題を修正することに合意しました。</p>
-    <img src="/assets/img/ga-asset-panel-before.png" class="img-fluid rounded mt-4" alt="再設計前のアセットパネル">
-    <p class="figure-caption text-center mt-2">再設計前のアセットパネル——各機能がそれぞれ独自の一貫性のないインタラクションパターンを持っていた</p>
+    <p>テストを通じて、製品全体に一貫した混乱のパターンが見えてきた。その一部：</p>
+    <img src="/assets/img/ga/panel-before-jp.png" class="img-fluid rounded mt-3" alt="再設計前のアセットパネル">
   </div>
 </div>
 
-<!-- Approach Section -->
+<!-- Goals -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">アプローチ</h3>
-    <p>デザインチームとエンジニアリングと共に、以下のニーズに対応できるパターンを設計しました：</p>
+    <h3 class="page-label mb-3">ゴール</h3>
+    <p>再設計は、まったく異なるふたりのユーザーに同時に応える必要があった。初めてアプリを開く人と、何年も使い込んできた人。どちらかを犠牲にしない解決策が求められた。</p>
     <ol>
-      <li>初心者がコア機能を発見・使用しやすくする</li>
-      <li>パワーユーザーにワークフロー効率を提供する（彼らは動画の作り方を知っている——スピードとスケールが重要）</li>
+      <li><strong>新規ユーザーの発見性</strong>、迷わず探索でき、自信を持って短い動画を完成できる</li>
+      <li><strong>パワーユーザーのスピード</strong>、使い慣れたユーザーはやりたいことがわかっている。ツールは邪魔しない</li>
     </ol>
-    <p>設計対象のユーザータイプを特定しました：</p>
-    <ul>
-      <li>新規ユーザー：初めて動画を作成する、ガイダンスが必要</li>
-      <li>プロダクトチャンピオン：多数の動画を制作するパワーユーザー、効率性が重要</li>
-    </ul>
-    <p>解決策は「ツールボックス」と呼ぶ、製品全体に一貫して適用するプログレッシブディスクロージャーパターンでした：</p>
-    <ul>
-      <li>クイックアクセス（ユーザーのブックマーク）</li>
-      <li>最近使用したもの（リピートユーザーへの高速アクセス）</li>
-      <li>カテゴリ（発見のための整理されたブラウジング）</li>
-      <li>カスタム（ブランドアセットまたはカスタム）</li>
-    </ul>
-    <p>このひとつのパターンが、異なる深さで複数のユーザータイプに対応——初心者には明確な出発点、パワーユーザーには最近使用したものへの高速アクセス、エンタープライズチームにはブランドコントロールを提供しました。</p>
-    <img src="/assets/img/journey1.png" class="img-fluid rounded mt-4" alt="ツールボックスパターン">
-    <p class="figure-caption text-center mt-2">ツールボックスパターン——すべてのユーザータイプに対応するプログレッシブディスクロージャーシステム</p>
   </div>
 </div>
 
-<!-- Outcome Section -->
+<!-- Approach -->
+<div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
+  <div class="container">
+    <h3 class="page-label mb-3">アプローチ</h3>
+    <p>製品内のすべてのアセットタイプに共通する流れがあった。<em>ブラウズ → 選択 → 適用 → カスタマイズ</em>。解決策は、この流れをベースにしたプログレッシブディスクロージャーパターン、「ツールボックス」と呼んだものを、すべてのパネルに一貫して適用することだった：</p>
+    <ul>
+      <li><strong>クイックアクセス</strong>、ブックマークしたアイテムをすぐに表示</li>
+      <li><strong>最近使用したもの</strong>、繰り返し作業のショートカット</li>
+      <li><strong>カテゴリ</strong>、発見のための整理されたブラウジング</li>
+      <li><strong>カスタム</strong>、ブランドアセットやアップロードしたコンテンツ</li>
+    </ul>
+    <p>新規ユーザーはカテゴリで探索する。パワーユーザーは最近使用したものを使い続ける。エンタープライズチームはカスタムでブランドの一貫性を保つ。ひとつのパターン、三つのメンタルモデル。</p>
+  </div>
+</div>
+
+<!-- Final design -->
+<div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
+  <div class="container">
+    <h3 class="page-label mb-3">デザイン</h3>
+    <img src="/assets/img/ga/solution.png" class="img-fluid rounded mb-4" alt="最終的なアセットパネルデザイン">
+    <p class="figure-caption text-center mb-4">キャラクター、カテゴリ、テキスト、オーディオパネルに適用されたツールボックスパターン</p>
+    <p>変わったのはUIだけではない。期待値が変わった。ツールの新しい部分に出会ったとき、ユーザーはすでにそのパターンを別の場所で学んでいる。</p>
+  </div>
+</div>
+
+<!-- Outcome -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">成果</h3>
-    <p>新しいパターンを実装し、追加テストを実施した結果：</p>
-    <ul>
-      <li>新規ユーザーが初めての動画を完成できるようになった（以前は苦労または失敗していた）</li>
-      <li>パワーユーザーが認知負荷なく機能を見つけられるようになった——アプリ全体での一貫したパターン</li>
-      <li>エンタープライズチームがブランドアセットの使用を管理できるようになった</li>
-    </ul>
-    <p>ユーザビリティ指標を超えて、パターンはチームのスケールを可能にしました：</p>
-    <ul>
-      <li>文書化された再利用可能なパターンにより、デザインとエンジニアリングの作業速度が向上</li>
-      <li>ナビゲーションを毎回ゼロから考えることなく、一貫した新機能の構築が可能に</li>
-      <li>パターンは私が退職した後も数年にわたって使い続けられている</li>
-    </ul>
-    <p>再設計により新規ユーザーがすぐに使いこなせるようになり、サブスクリプションが増加しました。</p>
-  </div>
-</div>
-
-<!-- Example Section -->
-<div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
-  <div class="container">
-    <div style="padding:62.12% 0 0 0;position:relative;">
-      <iframe src="https://player.vimeo.com/video/676490224?h=a49b27c683&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Color Properties"></iframe>
+    <div class="row mb-4">
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">新規ユーザー</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">チュートリアルなしで、どのパネルも操作できるようになった。パターンが転用できた。</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">パワーユーザー</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">一貫したパターンにより、毎回の覚え直しがなくなった。クイックアクセスと最近使用したものが、求めていたスピードを実現した。</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">チーム</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">新機能を共通パターンに沿って構築できるようになり、リリースごとのデザインとエンジニアリングの負荷が減った。ツールボックスは私が退職した後も、何年も使われ続けている。</p>
+      </div>
     </div>
-    <p class="figure-caption text-center mt-2">デザインパターンの実際——ユーザーが色を閲覧、適用、保存、再利用する流れ（26秒）。</p>
-  </div>
-</div>
-
-<!-- Reflections Section -->
-<div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
-  <div class="container">
-    <h3 class="page-label mb-3">振り返り</h3>
-    <p>機能のリリースに追われがちです——特に動きの速いスタートアップでは。しかし、一歩引いて実際に全体がどのように機能しているかをテストし理解しなければ、誰のためにもならない断片化した製品を作り続けることになります。</p>
-    <p>このプロジェクトは、開発し続けるプレッシャーの中でも、プロトタイピングとテストのための時間を確保することの大切さを改めて気づかせてくれました。</p>
+    <p style="font-size: var(--text-sm); line-height: 1.7; opacity: 0.65;">問題は悪いデザインではなかった。共通のデザインがなかったことだ。チームが並行して素早く動くとき、個々の判断はそれぞれ合理的に見える。そのコストは、誰かがテストをして初めて、目に見えない形で積み上がっていたことに気づく。</p>
   </div>
 </div>

@@ -63,3 +63,18 @@ title: "Projects"
     <p class="other-work-desc">Designed mobile app for major Japanese entertainment company's new store concept. Wireframed and prototyped core flows under tight brand and IP guidelines for iOS and Android launch.</p>
   </div>
 </div>
+
+<div class="row pt-5 pb-2">
+  <hr class="other-work-rule">
+  <h2 class="page-label mb-0">Personal projects</h2>
+</div>
+
+<div class="row pt-3 pb-5">
+  <div class="col-md-6 mb-4">
+    <p class="other-work-title">Kotodama — Contextual Japanese Learning App</p>
+    <p class="card-tags">Claude Code · Experiment · Language Learning</p>
+    {% assign kotodama_post = site.posts | where: "slug", "kotodama" | first %}
+    <p class="other-work-desc">{{ kotodama_post.excerpt }}</p>
+    <a href="/2026/03/19/kotodama.html" class="other-work-more">Read more →</a>
+  </div>
+</div>

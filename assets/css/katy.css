@@ -260,6 +260,84 @@ body.dark-mode .page-label {
   margin: 0;
 }
 
+.other-work-more {
+  font-size: var(--text-xs);
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 0.7;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  margin-top: 0.4rem;
+}
+.other-work-more:hover {
+  opacity: 1;
+}
+
+/* ─────────── PERSONAS ─────────── */
+.persona-card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  border-left: 3px solid #ccc;
+  height: 100%;
+}
+.persona-card--newbie {
+  border-left-color: #C17F5B;
+}
+.persona-card--poweruser {
+  border-left-color: #5B7B7A;
+}
+body.dark-mode .persona-card {
+  background: #2a2a2a;
+}
+.persona-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 1rem;
+}
+.persona-type {
+  font-weight: 600;
+  font-size: var(--text-md);
+  margin-bottom: 0.6rem;
+}
+.persona-body {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  opacity: 0.75;
+  margin: 0;
+}
+.speech-bubble {
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 0.65rem 0.9rem;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  font-style: italic;
+  position: relative;
+}
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: -8px;
+  border-width: 7px 9px 7px 0;
+  border-style: solid;
+  border-color: transparent #f0f0f0 transparent transparent;
+}
+body.dark-mode .speech-bubble {
+  background: #3a3a3a;
+}
+body.dark-mode .speech-bubble::before {
+  border-color: transparent #3a3a3a transparent transparent;
+}
+
+.post-body {
+  max-width: 640px;
+}
+
 body.dark-mode .other-work-title {
   color: #d8d8d8;
 }
@@ -583,8 +661,7 @@ body.dark-mode .contact-btn:hover {
 }
 
 .content-wrapper {
-  max-width: 760px;
-  margin: 0 auto;
+  max-width: 640px;
 }
 
 /* ─────────── PROJECT TAGS & LOCK ─────────── */
@@ -629,6 +706,7 @@ body.dark-mode .card-lock {
   height: 220px;
   object-fit: cover;
 }
+
 
 .hover-image {
   position: absolute;
@@ -735,6 +813,10 @@ img.img-fluid.rounded {
   margin-bottom: 1rem;
   display: block;
 }
+
+img.img-sm, .post-inline img.img-sm { max-width: 140px; }
+img.img-md, .post-inline img.img-md { max-width: 320px; }
+img.img-lg, .post-inline img.img-lg { max-width: 100%; }
 
 .post-inline h2 {
   font-size: var(--text-sm);

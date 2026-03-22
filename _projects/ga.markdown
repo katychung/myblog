@@ -1,12 +1,12 @@
 ---
 layout: project
-title: "DIY Animated Video Platform"
-date: 1999-05-01 00:00:00
-project-date: "2014 - 2018"
-description: "Redesigning core interaction patterns to serve both new users and power users—reducing learning curve and enabling consistent feature development as the product and team scaled."
-teaser-image: /assets/img/ga-teaser.png
-screens: /assets/img/ga-screens.png
-tags: [Information architecture, Interaction patterns, User research]
+title: "Nothing Was Inconsistent. Everything Was."
+date: 1999-05-02 00:00:00
+project-date: "2014 – 2018"
+description: "Vyond's animation tool had grown fast—too fast. Beta testing exposed a product that worked feature by feature, but fell apart in practice. A single interaction pattern changed that."
+teaser-image: /assets/img/ga/teaser.png
+screens: /assets/img/ga/screens.png
+tags: [Information architecture, Interaction design, User research]
 ---
 
 <!-- Hero Section -->
@@ -14,12 +14,19 @@ tags: [Information architecture, Interaction patterns, User research]
   <div class="container">
     <div class="d-flex justify-content-between align-items-baseline project-lang-row">
       <h1>{{ page.title }}</h1>
-      <a href="/projects/ga-ja.html" class="lang-switch-link">日本語版</a>
+      <a href="/projects/ga-ja.html" class="lang-switch-link">日本語</a>
     </div>
-    <p>{{ page.description }}</p>
+    <p class="lead" style="max-width: 640px;">{{ page.description }}</p>
     <div class="py-4">
-      <img src="/assets/img/ga-screens.png" class="img-fluid rounded" alt="Editing Props in Vyond Studio">
-      <figcaption class="figure-caption text-center mt-2">Editing Props in Vyond Studio</figcaption>
+      <div style="background-color: #9BDEA8; border-radius: 8px; padding: 2rem;">
+        <!-- Device frame -->
+        <div style="background: #1c1c1e; border-radius: 10px; padding: 14px 14px 28px 14px; position: relative; box-shadow: 0 2px 12px rgba(0,0,0,0.3);">
+          <div style="width: 6px; height: 6px; background: #3a3a3a; border-radius: 50%; margin: 0 auto 10px;"></div>
+          <video class="img-fluid" autoplay muted loop playsinline style="border-radius: 4px; display: block;">
+            <source src="/assets/img/ga/color-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
     <hr class="project-meta-rule">
     <div class="project-meta-grid">
@@ -29,144 +36,142 @@ tags: [Information architecture, Interaction patterns, User research]
       </div>
       <div>
         <div class="meta-label">Team</div>
-        <p class="meta-value">Design, engineering & product</p>
-      </div>
-      <div>
-        <div class="meta-label">Timeline</div>
-        <p class="meta-value">2014 – 2018</p>
-      </div>
-      <div>
-        <div class="meta-label">Skills</div>
-        <p class="meta-value meta-skills">Information architecture · Interaction patterns · User research</p>
+        <p class="meta-value">Design, Engineering, Product</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Overview Section -->
+<!-- Context -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">Overview</h3>
-    <p>Vyond was transitioning to a new tech stack while the product and team
-were both scaling rapidly. As we approached beta release, user testing
-revealed critical issues: new users struggled to complete basic tasks,
-and existing power users couldn't find features they relied on.</p>
-    <p>The root cause wasn't individual features—it was the information
-architecture. With multiple designers working on different features
-without a holistic approach, the product had become fragmented and
-inconsistent.</p>
-    <p>Working with the design team (UI and UX) and engineering, I helped
-establish interaction patterns that could serve three user types:
-beginners creating their first video, power users needing workflow
-efficiency, and decision-makers managing brand assets.</p>
-    <p>These patterns reduced the learning curve, improved efficiency for power
-users, and are still in use years after I left the company.</p>
+    <h3 class="page-label mb-3">Context</h3>
+    <p>I joined Vyond in 2014 — three designers, ~30 employees, working across Hong Kong, Taiwan, and San Francisco. Over four years, headcount doubled annually. I grew with the company, helping build the design processes and patterns that scaling required.</p>
+    <p>The app was being rebuilt from the ground up — not migrated, but redesigned entirely. To move fast, the design team split into smaller groups, each owning a set of features. It worked, until it didn't. With no shared oversight, every team made sensible local decisions that added up to a product without a common language. Private beta testing with new users and power users made that undeniable.</p>
+    <p>The product was a browser-based animation tool that let non-designers make professional video — trusted by many Fortune 500 companies. Here's a sense of its scope:</p>
+    <div class="mt-4" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem;">
+      <div class="row mb-2">
+        <div class="col-6 col-md-3 mb-3">
+          <p class="card-tags mb-1">Scene</p>
+          <p style="font-size: var(--text-sm); opacity: 0.7; line-height: 1.6;">Background · Camera · Duration · Transitions</p>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <p class="card-tags mb-1">Characters</p>
+          <p style="font-size: var(--text-sm); opacity: 0.7; line-height: 1.6;">Actions · Expressions · Lip sync · Audio</p>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <p class="card-tags mb-1">Effects</p>
+          <p style="font-size: var(--text-sm); opacity: 0.7; line-height: 1.6;">Group · Motion· Masking · Filters</p>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <p class="card-tags mb-1">Assets & Output</p>
+          <p style="font-size: var(--text-sm); opacity: 0.7; line-height: 1.6;">Props · Text · Audio · Templates ·　Themes</p>
+        </div>
+      </div>
+      <details style="border-top: 1px solid #e0e0e0; padding-top: 1rem;">
+        <summary style="cursor: pointer; font-size: var(--text-sm); color: var(--text-muted, #666); user-select: none;">See the full map →</summary>
+        <img src="/assets/img/ga/structure.png" class="rounded mt-3" style="max-width: 60%; display: block; margin: 0 auto;" alt="Full structure of a Vyond video">
+        <p class="figure-caption text-center mt-2">Every node a feature, every feature its own interaction pattern</p>
+      </details>
+    </div>
+
   </div>
 </div>
 
-<!-- Background Section -->
+<!-- People -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">Background & Context</h3>
-    <p>I joined Vyond's Hong Kong office in 2014 when the company was approaching
-product-market fit. The team was lean—3 designers among ~30 employees—and
-highly cross-functional, working with colleagues across Hong Kong, Taiwan, and San Francisco.</p>
-    <p>As the company doubled in size annually, I contributed to establishing design foundations that could scale:</p>
-    <ul>
-      <li><strong>Design process:</strong> Structured workflows improving alignment between product,
-  design, and engineering</li>
-      <li><strong>User testing practice:</strong> Regular testing uncovered friction points and
-  helped build a more user-centric culture across teams</li>
-      <li><strong>Onboarding improvements:</strong> Mapped user journeys to reduce churn and
-  increase adoption</li>
-      <li><strong>Interaction patterns:</strong> Documented reusable patterns to ensure consistency
-  and faster development</li>
-    </ul>
+    <h3 class="page-label mb-3">The people</h3>
+    <p>As the rebuilt app approached beta release, testing exposed two distinct failure modes — one for new users, one for experienced ones.</p>
+    <div class="row mt-4 mb-2">
+      <div class="col-sm-6 mb-4">
+        <div class="persona-card persona-card--newbie">
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <img src="/assets/img/ga/persona-newbie.png" class="persona-avatar" alt="Newbie">
+            <div class="speech-bubble flex-grow-1">"It was a little bit confusing at times... maybe can do it another time and get the gist of it."</div>
+          </div>
+          <p class="persona-type">Newbie</p>
+          <p class="persona-body">Just signed up on a trial account. Wants to make one video — just one. Too many options with no clear entry point, and it's easy to feel lost before they've even started.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 mb-4">
+        <div class="persona-card persona-card--poweruser">
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <img src="/assets/img/ga/persona-champion.png" class="persona-avatar" alt="Product Champion">
+            <div class="speech-bubble flex-grow-1">"The interface is quite different from legacy... I'm trying to make the character talk, but I'm not sure where to click."</div>
+          </div>
+          <p class="persona-type">Power User</p>
+          <p class="persona-body">Heavy user making videos at scale, often for a whole team. Knows what they want — the tool just needs to get out of the way. Inconsistent patterns mean relearning interactions across every panel.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Problem -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">Problem</h3>
-    <p>Beta testing revealed critical usability issues:</p>
-    <ul>
-      <li>New users couldn't complete basic tasks (making their first video)</li>
-      <li>Power users could find features but faced inconsistent patterns across the app—having to relearn interactions created cognitive load and slowed their workflow</li>
-      <li>The product felt fragmented</li>
-    </ul>
-    <p>The root cause: Designers had been shipping features in parallel without
-a unified information architecture. Each feature worked in isolation, but
-together they created an inconsistent experience.</p>
-    <p>Leadership saw the testing results and agreed to fix this before launch.</p>
-    <img src="/assets/img/ga-asset-panel-before.png" class="img-fluid rounded mt-4" alt="Asset panel before redesign">
-    <p class="figure-caption text-center mt-2">Asset panel before redesign — each feature had its own inconsistent interaction pattern</p>
+    <h3 class="page-label mb-3">The problem</h3>
+    <p>Testing surfaced consistent patterns of confusion across the product. Some of what we found:</p>
+    <img src="/assets/img/ga/panel-before.png" class="img-fluid rounded mt-3" alt="Asset panel before redesign">
   </div>
 </div>
 
-<!-- New Approach Section -->
+<!-- Goals -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
-    <h3 class="page-label mb-3">Approach</h3>
-    <p>Working with the design team and engineering, we needed to create patterns that could:</p>
+    <h3 class="page-label mb-3">Goals</h3>
+    <p>The redesign had to work for two very different people — someone opening the app for the first time, and someone who'd used it for years. The solution had to serve both without compromise.</p>
     <ol>
-      <li>Help beginners discover and use core features</li>
-      <li>Give power users workflow efficiency (they already knew how to make videos, they cared about speed and scale)</li>
+      <li><strong>Discoverability for beginners</strong> — easy to explore and complete a short video with confidence</li>
+      <li><strong>Speed for power users</strong> — experienced creators know what they want; the tool should get out of the way</li>
     </ol>
-    <p>We identified three user types to design for:</p>
-    <ul>
-      <li>New users: Creating their first video, needed guidance</li>
-      <li>Product champions: Power users making many videos, needed efficiency</li>
-    </ul>
-    <p>The solution was a progressive disclosure pattern applied consistently
-    across the product that we called the "Toolbox":</p>
-    <ul>
-      <li>Quick access (user's bookmarks)</li>
-      <li>Recently Used (fast access for repeat users)</li>
-      <li>Categories (organized browsing for discovery)</li>
-      <li>Custom (brand assets or custom)</li>
-    </ul>
-    <p>This single pattern could serve all three user types at different depths—beginners got clear starting points, power users got fast access to recents, and enterprise teams got brand control.</p>
-    <img src="/assets/img/journey1.png" class="img-fluid rounded mt-4" alt="The Toolbox pattern">
-    <p class="figure-caption text-center mt-2">The Toolbox pattern — a single progressive disclosure system serving all user types</p>
   </div>
 </div>
 
-<!-- New Outcome Section -->
+<!-- Approach -->
+<div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
+  <div class="container">
+    <h3 class="page-label mb-3">Approach</h3>
+    <p>The same underlying flow — <em>browse → select → apply → customise</em> — applied across every asset type in the product. The solution was a progressive disclosure pattern we called the <strong>Toolbox</strong>, applied consistently across all of them:</p>
+    <ul>
+      <li><strong>Quick access</strong> — bookmarked items, surfaced immediately</li>
+      <li><strong>Recently used</strong> — the shortcut for repeat tasks</li>
+      <li><strong>Categories</strong> — structured browsing for discovery</li>
+      <li><strong>Custom</strong> — brand assets or uploaded content</li>
+    </ul>
+    <p>A beginner uses Categories to explore. A power user lives in Recently Used. An enterprise team uses Custom to enforce brand consistency. One pattern, three mental models.</p>
+  </div>
+</div>
+
+<!-- Final design -->
+<div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
+  <div class="container">
+    <h3 class="page-label mb-3">The result</h3>
+    <img src="/assets/img/ga/solution.png" class="img-fluid rounded mb-4" alt="Final asset panel design">
+    <p class="figure-caption text-center mb-4">The Toolbox pattern applied across characters, categories, text, and audio panels</p>
+    <p>What changed wasn't just the UI — it was the expectation: users now knew what to do when they encountered any new part of the tool, because they'd already learned the pattern somewhere else.</p>
+  </div>
+</div>
+
+<!-- Outcome -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">Outcome</h3>
-    <p>After implementing the new patterns and conducting further testing:</p>
-    <ul>
-      <li>New users could complete their first video (previously struggled or failed)</li>
-      <li>Power users found features with less cognitive load—consistent patterns across the app</li>
-      <li>Enterprise teams could control brand asset usage</li>
-    </ul>
-    <p>Beyond usability metrics, the patterns enabled the team to scale:</p>
-    <ul>
-      <li>Design and engineering could work faster with documented, reusable patterns</li>
-      <li>New features could be built consistently without rethinking navigation each time</li>
-      <li>The patterns are still in use years after I left the company</li>
-    </ul>
-    <p>The redesign led to reduced learning curve and increased subscriptions.</p>
-  </div>
-</div>
-
-<!-- Example Section -->
-<div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
-  <div class="container">
-    <div style="padding:62.12% 0 0 0;position:relative;">
-      <iframe src="https://player.vimeo.com/video/676490224?h=a49b27c683&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Color Properties"></iframe>
+    <div class="row mb-4">
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">For new users</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Could navigate any panel without a tutorial — the pattern transferred.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">For power users</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Consistent patterns eliminated the relearning tax. Quick access and recents gave experienced creators the speed they needed.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <p class="persona-type">For the team</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">New features could be built to a shared pattern — reducing design and engineering overhead on each subsequent release. The Toolbox is still in use years after I left.</p>
+      </div>
     </div>
-    <p class="figure-caption text-center mt-2">Design pattern in action — how users browse, apply, save, and reuse colours (26s).</p>
-  </div>
-</div>
-
-<!-- Reflections Section -->
-<div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
-  <div class="container">
-    <h3 class="page-label mb-3">Reflections</h3>
-    <p>It's easy to get swept up in shipping features—especially in a fast-moving startup. But if you don't step back to test and understand how things actually work together, you end up building a fragmented product that serves no one well.</p>
-    <p>This project was a reminder to protect time for prototyping and testing, even when the pressure is to just keep building.</p>
+    <p style="font-size: var(--text-sm); line-height: 1.7; opacity: 0.65;">The problem wasn't bad design — it was no shared design. When teams move fast in parallel, each decision makes local sense. The cost accumulates invisibly until someone does the test that makes it undeniable.</p>
   </div>
 </div>
