@@ -10,6 +10,27 @@ title: "Home"
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
 .cur::after { content: '█'; animation: blink 1s step-end infinite; }
 
+@keyframes holo-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.g-name {
+  transition: all 0.4s ease;
+  padding-bottom: 0.15em;
+}
+.g-name:hover {
+  background: linear-gradient(
+    120deg,
+    #d4b8f0, #a8d8f5, #b8f0e0, #f5d0e8, #c8b8f0, #a8d8f5, #d4b8f0
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: holo-shift 3s ease infinite;
+}
+
 .home-g      { padding: 3rem 0; }
 .g-greeting  { font-size: 0.82rem; margin-bottom: 0.4rem; }
 .g-greeting span:not(.wave-emoji) { opacity: 0.4; }
