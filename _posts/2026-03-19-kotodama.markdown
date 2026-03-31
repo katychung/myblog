@@ -20,4 +20,6 @@ That's the part that feels new. As a designer with some technical knowledge, I'd
 
 Now I'm thinking, what else is possible? Tools I've always wanted but that don't exist. Utilities built exactly for how I work.
 
+---
 
+*Edit: since this first project, I've been actively building with Claude — a React app, hosted on Vercel, using the Claude API and Google Places API. Each project teaches me something new about what's actually possible when the barrier to building is this low.*
