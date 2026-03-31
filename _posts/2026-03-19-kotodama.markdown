@@ -22,4 +22,4 @@ Now I'm thinking, what else is possible? Tools I've always wanted but that don't
 
 ---
 
-*Edit: since this first project, I've been actively building with Claude — a React app, hosted on Vercel, using the Claude API and Google Places API. Each project teaches me something new about what's actually possible when the barrier to building is this low.*
+*Edit: since this first project, I've been actively building with Claude — a React app, Vercel for hosting, using the Claude API and Google Places API.*
