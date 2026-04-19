@@ -1,6 +1,9 @@
 ---
 layout: project
-title: "No One Owned the Whole Thing"
+title: "End-to-End Journey Mapping"
+company: Flow
+featured: true
+order: 3
 project-date: "2025"
 description: "Surfacing the systemic gaps blocking automation and self-service growth through stakeholder interviews and journey mapping."
 teaser-image: assets/img/flow/dashboard.png

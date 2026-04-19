@@ -4,3 +4,18 @@ _site
 .jekyll-metadata
 vendor
 assets/archive
+
+# Mac system files
+**/.DS_Store
+
+# Private — do not commit
+JD.md
+.JD.md
+CLAUDE.md
+Contract.pdf
+.claude/
+_data/
+_drafts/
+
+# Duplicate file
+gitignore

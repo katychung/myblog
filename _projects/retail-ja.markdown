@@ -1,6 +1,9 @@
 ---
 layout: project
-title: "誰も全体を把握していなかった"
+title: "エンドツーエンドのジャーニーマッピング"
+company: Flow
+featured: true
+order: 3
 project-date: "2025"
 description: "ステークホルダーインタビューとジャーニーマッピングで、自動化とセルフサービス成長を阻む構造的なギャップを明らかにした。"
 teaser-image: assets/img/flow/dashboard.png

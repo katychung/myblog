@@ -1,6 +1,9 @@
 ---
 layout: project
-title: "Nothing Was Inconsistent. Everything Was."
+title: "Interaction Design for a Maturing Product"
+company: Vyond
+featured: true
+order: 1
 date: 1999-05-02 00:00:00
 project-date: "2014 – 2018"
 description: "Vyond's animation tool had grown fast—too fast. Beta testing exposed a product that worked feature by feature, but fell apart in practice. A single interaction pattern changed that."
