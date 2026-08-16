@@ -53,6 +53,9 @@ plugins:
 #   - vendor/ruby/
 timezone: Japan
 
+exclude:
+  - CLAUDE.md
+
 collections:
   projects:
     output: true

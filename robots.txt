@@ -1,2 +1,9 @@
 User-agent: *
-Disallow: /
+Disallow: /cv
+Disallow: /cv-ja
+Disallow: /about
+Disallow: /about-ja
+Disallow: /projects
+Disallow: /assets/img/ga
+Disallow: /assets/img/proj-02
+Disallow: /assets/img/flow

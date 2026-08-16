@@ -124,7 +124,7 @@ tags: [Information architecture, Interaction design, User research]
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">Goals</h3>
-    <p>The redesign had to work for two very different people — someone opening the app for the first time, and someone who'd used it for years. The solution had to serve both without compromise.</p>
+    <p>The redesign had to work for two very different people — someone opening the app for the first time, and someone who'd used it for years. Rather than trade one off against the other, the fix had to come from how choices were structured, not who they were structured for.</p>
     <ol>
       <li><strong>Discoverability for beginners</strong> — easy to explore and complete a short video with confidence</li>
       <li><strong>Speed for power users</strong> — experienced creators know what they want; the tool should get out of the way</li>
@@ -143,7 +143,7 @@ tags: [Information architecture, Interaction design, User research]
       <li><strong>Categories</strong> — structured browsing for discovery</li>
       <li><strong>Custom</strong> — brand assets or uploaded content</li>
     </ul>
-    <p>A beginner uses Categories to explore. A power user lives in Recently Used. An enterprise team uses Custom to enforce brand consistency. One pattern, three mental models.</p>
+    <p>A beginner uses Categories to explore — they're evaluating the tool, not yet producing. Everything else — Recently Used, Quick Access, Custom — earns its keep once someone's making videos regularly. An enterprise team uses Custom to enforce brand consistency. One pattern, two mental models.</p>
   </div>
 </div>
 
@@ -162,19 +162,52 @@ tags: [Information architecture, Interaction design, User research]
   <div class="container">
     <h3 class="page-label mb-3">Outcome</h3>
     <div class="row mb-4">
-      <div class="col-md-4 mb-4">
-        <p class="persona-type">For new users</p>
-        <p style="font-size: var(--text-sm); line-height: 1.7;">Could navigate any panel without a tutorial — the pattern transferred.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <p class="persona-type">For power users</p>
-        <p style="font-size: var(--text-sm); line-height: 1.7;">Consistent patterns eliminated the relearning tax. Quick access and recents gave experienced creators the speed they needed.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <p class="persona-type">For the team</p>
-        <p style="font-size: var(--text-sm); line-height: 1.7;">New features could be built to a shared pattern — reducing design and engineering overhead on each subsequent release. The Toolbox is still in use years after I left.</p>
+      <div class="col-md-12">
+        <p class="persona-type">Reducing cognitive load</p>
+        <img src="/assets/img/ga/newuser-before-after.png" class="img-fluid rounded mb-3" alt="Character action panel before and after redesign">
+        <p style="font-size: var(--text-sm); line-height: 1.7;"><strong>Before</strong>, the character showed in full colour while you picked an action — colour that had nothing to do with the choice. <strong>After</strong>, just a silhouette. The eye goes straight to the action, less to look at, easier to decide.</p>
       </div>
     </div>
-    <p style="font-size: var(--text-sm); line-height: 1.7; opacity: 0.65;">The problem wasn't bad design — it was no shared design. When teams move fast in parallel, each decision makes local sense. The cost accumulates invisibly until someone does the test that makes it undeniable.</p>
+    <div class="row mb-4 align-items-center">
+      <div class="col-md-6">
+        <img src="/assets/img/ga/quick-access.png" class="img-fluid rounded" alt="Quick access panel">
+      </div>
+      <div class="col-md-6">
+        <p class="persona-type">Built-in speed</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">A Quick Access section let power users surface bookmarked items directly, without searching through assets again.</p>
+      </div>
+    </div>
+    <div class="row mb-4 align-items-center">
+      <div class="col-md-6">
+        <img src="/assets/img/ga/themes.png" class="img-fluid rounded" alt="Three category themes">
+      </div>
+      <div class="col-md-6">
+        <p class="persona-type">Organised by category</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Before, everything sat together in one list. The redesign split assets into three category themes, so each type had a clear home instead of getting lost among the rest.</p>
+      </div>
+    </div>
+    <div class="row mb-4 align-items-center">
+      <div class="col-md-6">
+        <img src="/assets/img/ga/expressions.png" class="img-fluid rounded" alt="Expression selection panel">
+      </div>
+      <div class="col-md-6">
+        <p class="persona-type">Where design met engineering</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">Expressions were originally generated dynamically per character. We switched to one fixed, generic set for two reasons:</p>
+        <ol style="font-size: var(--text-sm); line-height: 1.7; padding-left: 1.2rem;">
+          <li>Easier to choose from</li>
+          <li>Faster performance</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <p class="persona-type">For the team</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">New features could be built to a shared pattern — reducing design and engineering overhead on each subsequent release.</p>
+        <details style="border-top: 1px solid #e0e0e0; padding-top: 1rem; margin-top: 0.5rem;">
+          <summary style="cursor: pointer; font-size: var(--text-sm); color: var(--text-muted, #666); user-select: none;">See the pattern →</summary>
+          <img src="/assets/img/ga/pattern.png" class="img-fluid rounded mt-3" alt="Shared pattern applied across features">
+        </details>
+      </div>
+    </div>
   </div>
 </div>

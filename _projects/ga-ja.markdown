@@ -124,7 +124,7 @@ lang: ja
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">ゴール</h3>
-    <p>再設計は、まったく異なるふたりのユーザーに同時に応える必要があった。初めてアプリを開く人と、何年も使い込んできた人。どちらかを犠牲にしない解決策が求められた。</p>
+    <p>再設計は、まったく異なるふたりのユーザーに応える必要があった。初めてアプリを開く人と、何年も使い込んできた人。どちらかを犠牲にするのではなく、答えは「誰のための選択肢か」ではなく「選択肢がどう組み立てられているか」にあるはずだった。</p>
     <ol>
       <li><strong>新規ユーザーの発見性</strong>、迷わず探索でき、自信を持って短い動画を完成できる</li>
       <li><strong>パワーユーザーのスピード</strong>、使い慣れたユーザーはやりたいことがわかっている。ツールは邪魔しない</li>
@@ -162,19 +162,52 @@ lang: ja
   <div class="container">
     <h3 class="page-label mb-3">成果</h3>
     <div class="row mb-4">
-      <div class="col-md-4 mb-4">
-        <p class="persona-type">新規ユーザー</p>
-        <p style="font-size: var(--text-sm); line-height: 1.7;">チュートリアルなしで、どのパネルも操作できるようになった。パターンが転用できた。</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <p class="persona-type">パワーユーザー</p>
-        <p style="font-size: var(--text-sm); line-height: 1.7;">一貫したパターンにより、毎回の覚え直しがなくなった。クイックアクセスと最近使用したものが、求めていたスピードを実現した。</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <p class="persona-type">チーム</p>
-        <p style="font-size: var(--text-sm); line-height: 1.7;">新機能を共通パターンに沿って構築できるようになり、リリースごとのデザインとエンジニアリングの負荷が減った。ツールボックスは私が退職した後も、何年も使われ続けている。</p>
+      <div class="col-md-12">
+        <p class="persona-type">認知負荷を減らす</p>
+        <img src="/assets/img/ga/newuser-before-after.png" class="img-fluid rounded mb-3" alt="再設計前後のキャラクターアクションパネル">
+        <p style="font-size: var(--text-sm); line-height: 1.7;"><strong>以前</strong>は、アクションを選ぶ間もキャラクターがフルカラーで表示されていた。選択とは関係のない色の情報だった。<strong>今</strong>はシルエットのみ。視線はまっすぐアクションに向かう。見るものが減り、選びやすくなった。</p>
       </div>
     </div>
-    <p style="font-size: var(--text-sm); line-height: 1.7; opacity: 0.65;">問題は悪いデザインではなかった。共通のデザインがなかったことだ。チームが並行して素早く動くとき、個々の判断はそれぞれ合理的に見える。そのコストは、誰かがテストをして初めて、目に見えない形で積み上がっていたことに気づく。</p>
+    <div class="row mb-4 align-items-center">
+      <div class="col-md-6">
+        <img src="/assets/img/ga/quick-access.png" class="img-fluid rounded" alt="クイックアクセスパネル">
+      </div>
+      <div class="col-md-6">
+        <p class="persona-type">組み込みのスピード</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">クイックアクセスセクションにより、パワーユーザーはブックマークしたアイテムを直接呼び出せるようになった。アセットを毎回探し直す必要がなくなった。</p>
+      </div>
+    </div>
+    <div class="row mb-4 align-items-center">
+      <div class="col-md-6">
+        <img src="/assets/img/ga/themes.png" class="img-fluid rounded" alt="3つのカテゴリテーマ">
+      </div>
+      <div class="col-md-6">
+        <p class="persona-type">カテゴリで整理</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">以前は、すべてがひとつのリストにまとめられていた。再設計でアセットを3つのカテゴリテーマに分けたことで、それぞれの種類に明確な置き場所ができ、他に紛れることがなくなった。</p>
+      </div>
+    </div>
+    <div class="row mb-4 align-items-center">
+      <div class="col-md-6">
+        <img src="/assets/img/ga/expressions.png" class="img-fluid rounded" alt="表情選択パネル">
+      </div>
+      <div class="col-md-6">
+        <p class="persona-type">デザインとエンジニアリングが交わる場所</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">表情はもともとキャラクターごとに動的に生成されていた。ふたつの理由から、ひとつの固定・汎用セットに切り替えた：</p>
+        <ol style="font-size: var(--text-sm); line-height: 1.7; padding-left: 1.2rem;">
+          <li>選びやすくなる</li>
+          <li>パフォーマンスが向上する</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <p class="persona-type">チームへ</p>
+        <p style="font-size: var(--text-sm); line-height: 1.7;">新機能は共通パターンに沿って構築できるようになり、以降のリリースごとにデザインとエンジニアリングの負荷が減った。</p>
+        <details style="border-top: 1px solid #e0e0e0; padding-top: 1rem; margin-top: 0.5rem;">
+          <summary style="cursor: pointer; font-size: var(--text-sm); color: var(--text-muted, #666); user-select: none;">パターンを見る →</summary>
+          <img src="/assets/img/ga/pattern.png" class="img-fluid rounded mt-3" alt="複数の機能に適用された共通パターン">
+        </details>
+      </div>
+    </div>
   </div>
 </div>

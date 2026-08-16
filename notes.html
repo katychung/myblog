@@ -12,7 +12,10 @@ title: "Notes"
   {% for post in site.posts %}
   <div class="py-4 border-bottom">
     <h3 class="mb-1">{{ post.title }}</h3>
-    <p class="fw-light small mb-3">{{ post.date | date: "%B %Y" }}</p>
+    {% if post.subtitle %}
+    <p class="fst-italic mb-1">{{ post.subtitle }}</p>
+    {% endif %}
+    <p class="fw-light small text-muted mb-3">{{ post.date | date: "%B %Y" }}</p>
     <div class="post-inline">{{ post.content }}</div>
   </div>
   {% endfor %}
