@@ -119,7 +119,7 @@
     function checkPassword(event) {
       event.preventDefault();
       var password = document.getElementById("password").value;
-      if (password === "kaki") {
+      if (password === "kaki" || password === "tasogare") {
         localStorage.setItem('kc_portfolio_access', 'true');
         sessionStorage.setItem('kc_unlocked', 'true');
         document.getElementById("backLinkWrap").style.display = 'block';
